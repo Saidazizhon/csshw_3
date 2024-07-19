@@ -17,6 +17,57 @@
     padding: 0 16px;
     margin: 0 auto;
 }
+.skeleton{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skeleton__item{
+    width: 300px;
+    padding: 20px;
+}
+.skeleton__image{
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 14px;
+}
+.skeleton__line{
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+}
+.skeleton__line:nth-child(3){
+    width: 80%;
+}
+.skeleton__line:nth-child(4){
+    width: 60%;
+}
+.skeleton__anime{
+    background: linear-gradient(90deg, #ddd, #f7f7f7, #ddd);
+    background-size: 200%;
+    animation: skeleton 1s linear 0s infinite  ;
+}
+@keyframes skeleton {
+    to{
+        background-position: 200%;
+    }
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+span{
+    color: inherit;
+}
+button{
+    cursor: pointer;
+}
 .nav{
     width: 100%;
     height: 200px;
@@ -105,6 +156,44 @@
     height: 21px;
     color: #3858D6;
 }
+/*  */
+.collection{
+    display: flex;
+    overflow: auto;
+    list-style: none;
+    padding: 10px 50px;
+    gap: 20px;
+}
+.item{
+    cursor: pointer;
+    background: #ddddddea;
+    border-radius: 50px;
+}
+.item data{
+    white-space: nowrap;
+}
+/*  */
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/*  */
+.birbalo-btn{
+    margin: auto;
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 156px;
+    height: 36px;
+    background: #3858D6;
+    border-radius: 20px;
+    border: none;
+}
 .brands{
     width: 100%;
     height: 400px;
@@ -166,10 +255,10 @@
 }
 .products__card{
     width: 335px;
-    height: 440px;
+    text-align: center;
     background: #F6F6F6;
-    padding-left: 50px;
     padding-top: 10px;
+    padding-bottom: 20px;
     border-radius: 40px;
 }
 .cards__p-{
@@ -177,7 +266,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    margin-left: 40px;
+    margin: 20px 40px;
     color: #1E1D1D;
 }
 .cards__p--{
