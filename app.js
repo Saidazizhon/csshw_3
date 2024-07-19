@@ -46,7 +46,7 @@ function createCard(data){
               <img src="${product.thumbnail}" alt="${product.title}">
         </figure>
         <h3>${product.title}</h3>
-        <p class="cards__p- cards__p--" title="${product.description}">${product.description}</p>
+        <p class="desc cards__p- cards__p--" title="${product.description}">${product.description}</p>
         <button class="birbalo-btn">Buy now</button>
         `
         wrapper.appendChild(cardItem)
