@@ -2,7 +2,6 @@ const skeleton =  document.querySelector(".skeleton")
 const wrapper = document.querySelector(".wrapper")
 const seeMoreBtn = document.querySelector(".see-more__btn")
 const collection = document.querySelector(".collection")
-const gam_card = document.querySelector(".gam_card")
 
 const API_URL = "https://dummyjson.com"
 

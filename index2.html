@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #0b0b0b;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidazizhon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/Apple Watch.png">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <header class="header btn__close">
+        <div class="skeleton"></div>
+        <div class="nav__bac">
+            <section class="container">
+                <nav class="nav">
+                    <div class="moxid">
+                        <img src="./assets/Logo (2).svg" alt="">
+                    </div>
+                    <!--  -->
+                    <button class="mode-switch btn_moon" title="Switch Theme">
+                        <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="36" height="36" viewBox="0 0 24 24">
+                          <defs></defs>
+                          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </svg>
+                      </button>
+                    <!--  -->
+                    <div class="hamburger" onclick="gam_cardOpen()">
+                        <i class="fa-solid fa-bars icon_burger"></i>
+                    </div>
+                    <div class="gam_card">
+                        <ul class="gam_section">
+                            <li class="gam_item">
+                                Home
+                            </li>
+                            <li class="gam_item">
+                                Brands
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="gam_item">
+                                Recent Products
+                            </li>
+                            <li class="gam_item">
+                                Contact
+                            </li>
+                            <li class="gam_item">
+                                About
+                            </li>
+                        </ul>
+                    </div>
+                      <!--  -->
+                    <div class="nav__text">
+                        <ul class="text__">
+                            <li class="text-">
+                                <a href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="text-">
+                                <a href="./index.html">
+                                    Brands
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li class="text-">
+                                <a href="./index.html">
+                                    Recent Products
+                                </a>
+                            </li>
+                            <li class="text-">
+                                <a href="./index.html">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="text-">
+                                <a href="./index.html">
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </nav>
+                <button>
+                    B A C K
+                    <div id="clip">
+                        <div id="leftTop" class="corner"></div>
+                        <div id="rightBottom" class="corner"></div>
+                        <div id="rightTop" class="corner"></div>
+                        <div id="leftBottom" class="corner"></div>
+                    </div>
+                    <span id="rightArrow" class="arrow"></span>
+                    <span id="leftArrow" class="arrow"></span>
+                </button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="products">
+                    <div class="products__nav">
+                        <p class="products__nav__p-">Find your favourite smart watch.</p>
+                        <p class="products__nav__p--">Our Latest Products</p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <!--  -->
+                    <ul class="collection">
+                        <li class="item">
+                            <data value="">All</data>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="skeleton"></div>
+                    <div class="wrapper"></div>
+                    <div class="skeleton"></div>
+                    <br>
+                    <button class="see-more__btn cards__btn">View More</button>
+                    <!--  -->
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="wrapper"></div>
+            </section>
+        </div>
+    </header>
+
+    <script src="./main.js"></script>
+</body>
+</html>
