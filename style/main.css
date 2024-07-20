@@ -75,6 +75,54 @@ button{
     overflow: hidden;
     cursor:help;
 }
+.hamburger{
+    display: none;
+}
+.icon_burger{
+    color: #ffffff;
+    margin-top: 16px;
+}
+/*  */
+.gam_card{
+    height: 100vh;
+    background: #2c2a2a;
+    box-shadow: 0 0 30px #b8bfc350;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    left: -250px;
+    width: 250px;
+}
+.gam_card.show{
+    left: 0;
+}
+.gam_section{
+    margin-left: 20px;
+    color: #ddd;
+    padding-top: 40px;
+}
+.gam_item{
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
+.gam_item:hover {
+    background-color: #212121;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .gam_item:active {
+    background-color: #212121;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+/*  */
 .nav{
     width: 100%;
     height: 200px;
@@ -116,6 +164,7 @@ button{
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 .wrapper__text{
     width: 50%;
@@ -152,6 +201,19 @@ button{
     background: #3858D6;
     border: none;
 }
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
 .wrap__input{
     outline: none;
     border: #FFFFFF;
@@ -172,15 +234,31 @@ button{
     gap: 20px;
 }
 .item{
+    width: 140px;
+    text-align: center;
     cursor: pointer;
     background: #ddddddea;
     border-radius: 50px;
-    padding: 7px;
+    padding: 10px;
+}
+.item:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .item:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
 }
 .item data{
     white-space: nowrap;
 }
 /*  */
+.wrapper_,
 .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -207,6 +285,7 @@ button{
     height: 400px;
     display: flex;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 .brands__box{
     width: 355px;
@@ -415,4 +494,126 @@ color: #8B8E99;
     line-height: 20.08px;
     text-align: center;
     color: #ffffff;
+}
+
+
+
+
+
+
+@media (max-width:900px){
+    .nav__icon{
+        display: none;
+    }
+}
+
+@media (max-width:800px){
+    .nav__text{
+        display: none;
+    }
+    .hamburger{
+        display: contents;
+    }
+}
+
+@media (max-width:930px){
+    .header__wrapper{
+        gap: 60px;
+        margin-top: -150px;
+        text-align: center;
+    }
+    .products__card{
+        margin: auto;
+    }
+    .wrapper__text{
+        text-align: center;
+        width: 300px;
+    }
+    .wrapper__img{
+        width: 150px;
+    }
+}
+
+@media (max-width:1096px) {
+    .products__card{
+        margin: auto;
+    }
+}
+
+@media (max-width:350px) {
+    .products__card{
+        width: 200px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media (max-width:850px){
+    .wrapper__img{
+        display: none;
+    }
+    .wrapper__text{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){
+    .header__wrapper{
+        gap: 20px;
+        margin-top: -200px;
+        text-align: center;
+    }
+    .wrapper__p--{
+        display: none;
+    }
+}
+
+@media (max-width:1000px){
+    .ortiqcha{
+        display: none;
+    }
+}
+
+@media (max-width:800px){
+    .ortiqcha-{
+        display: none;
+    }
+    .ortiqcha--{
+        margin: auto;
+    }
+}
+
+@media (max-width:850px){
+    .cerd_{
+        overflow: auto;
+    }
+}
+
+@media (max-width:900px){
+    .about__input{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .about__input_{
+        margin: auto;
+    }
+    .input__img{
+        margin: auto;
+    }
+}
+
+
+@media (max-width:350px) {
+    .wrapper__input{
+        display: none;
+    }
+}
+
+
+@media (max-width:510px){
+    .wrapper__input{
+        width: 200px;
+    }
 }
