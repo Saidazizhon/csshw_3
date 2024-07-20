@@ -82,6 +82,17 @@ function createCategory(data){
     })
 }
 
+// 
+document.addEventListener('DOMContentLoaded', function () {
+    var modeSwitch = document.querySelector('.mode-switch');
+  
+    modeSwitch.addEventListener('click', function () {
+        document.documentElement.classList.toggle('dark');
+      modeSwitch.classList.toggle('active');
+    });
+  });
+//   
+
 collection.addEventListener("click", (e)=>{
     if(e.target.tagName === "DATA"){
         categoryValuy = e.target.value

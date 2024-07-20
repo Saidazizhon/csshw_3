@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
 @font-face {
     font-family: Poppins;
     src: url(../font/Poppins-Medium.woff);
@@ -17,6 +18,39 @@
     padding: 0 16px;
     margin: 0 auto;
 }
+:root {
+    --main-bg: #f8f8f8;
+    --box-bg: #ffffff;
+    --name-color: #232323;
+    --card-bg-text: #343434;
+  }
+  
+  .dark:root {
+    --main-bg: #131313;
+    --box-bg: #232323;
+    --name-color: #f8f8f8;
+    --card-bg-text: #ffffff;
+  }
+
+  body {
+    background: var(--main-bg);
+  }
+  .mode-switch {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #53bff5;
+    /* background-color: transparent; */
+    border: none;
+    padding: 0;
+    color: var(--name-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mode-switch.active .moon {
+    fill: var(--name-color);
+  }
 .skeleton{
     padding: 50px;
     display: flex;
@@ -513,6 +547,9 @@ color: #8B8E99;
     }
     .hamburger{
         display: contents;
+    }
+    .wrap__input{
+        width: 100px;
     }
 }
 
