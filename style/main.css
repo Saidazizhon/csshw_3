@@ -621,6 +621,11 @@ color: #8B8E99;
         margin: auto;
     }
 }
+@media (max-width:600px) {
+    .swiper{
+        display: none;
+    }
+}
 
 @media (max-width:850px){
     .cerd_{
